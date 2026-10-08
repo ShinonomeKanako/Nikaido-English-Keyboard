@@ -3,9 +3,6 @@ import Carbon
 
 public enum InputSources {
     public static let bundleID = "com.shinonome.inputmethod.EnKeyBoard"
-    // Separate the composition mode from the legacy Latin completion mode.
-    // The installer disables that legacy mode during migration.
-    public static let completionID = bundleID + ".composition"
     public static func isOurs(_ id: String) -> Bool { id == bundleID || id.hasPrefix(bundleID + ".") }
 
     public static func string(_ source: TISInputSource, _ key: CFString) -> String {
@@ -40,9 +37,6 @@ public enum InputSources {
            ["com.apple.keylayout.ABC", "com.apple.keylayout.US"].contains(id(recent)), selectable(recent) { return recent }
         return layouts.first { id($0) == "com.apple.keylayout.ABC" }
             ?? layouts.first { id($0) == "com.apple.keylayout.US" }
-    }
-    public static func completion() -> TISInputSource? {
-        source(id: completionID) ?? source(id: bundleID)
     }
 }
 
