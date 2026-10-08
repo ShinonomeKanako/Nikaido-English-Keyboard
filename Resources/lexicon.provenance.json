@@ -1,0 +1,11 @@
+{
+  "word_count": 89968,
+  "esdb_revision": "en-wl-wordlist-1e5b7d3/",
+  "esdb_command": "./scowl word-list 60 A 1 --deaccent --categories= --no-word-filter",
+  "esdb_source": "https://github.com/en-wl/wordlist",
+  "frequency_source": "https://github.com/wolfgarbe/SymSpell/blob/master/SymSpell/frequency_dictionary_en_82_765.txt",
+  "frequency_sha256": "c604e1121e398ae7c7fbf777f11e0a0f2fa66eda932cb9fba1321466cf3acd7b",
+  "american_list_sha256": "1d238bd816ffe4183dc2576e652100e084f92de05d7e2271511f002e9befd5e4",
+  "lexicon_sha256": "73b481461519f7b32eb173d248ec9737dcaceb7d4b0cc66a502ba1f91959df2f",
+  "modifications": "US word-list size 60, variant 1; ASCII lowercase entries, hyphens/apostrophes; missing frequencies use 1; no model or next-word prediction"
+}

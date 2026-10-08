@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+    <key>CFBundleIdentifier</key><string>com.shinonome.inputmethod.EnKeyBoard</string>
+    <key>CFBundleName</key><string>EnKeyBoard</string>
+    <key>CFBundleDisplayName</key><string>EnKeyBoard</string>
+    <key>CFBundleExecutable</key><string>EnKeyBoard</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleVersion</key><string>4</string>
+    <key>CFBundleShortVersionString</key><string>0.2.2</string>
+    <key>CFBundleIconFile</key><string>EnKeyBoard.icns</string>
+    <key>LSMinimumSystemVersion</key><string>14.0</string>
+    <key>LSUIElement</key><true/>
+    <key>NSPrincipalClass</key><string>NSApplication</string>
+    <key>InputMethodConnectionName</key><string>EnKeyBoard_Connection</string>
+    <key>InputMethodServerControllerClass</key><string>EnKeyBoardInputController</string>
+    <key>TISInputSourceID</key><string>com.shinonome.inputmethod.EnKeyBoard</string>
+    <key>TISIntendedLanguage</key><string>en</string>
+    <key>tsInputMethodCharacterRepertoireKey</key><array><string>Zyyy</string></array>
+    <key>tsInputMethodIconFileKey</key><string>EnKeyBoard.icns</string>
+    <!-- Native Caps switching with ABC; no app-owned global keyboard hook. -->
+    <key>TICapsLockLanguageSwitchCapable</key><true/>
+    <key>ComponentInputModeDict</key><dict>
+        <key>tsInputModeListKey</key><dict>
+            <key>com.shinonome.inputmethod.EnKeyBoard.composition</key><dict>
+                <key>TISInputSourceID</key><string>com.shinonome.inputmethod.EnKeyBoard.composition</string>
+                <key>TISIntendedLanguage</key><string>en</string>
+                <!-- This composition mode is not a plain Latin input source. -->
+                <key>tsInputModeCharacterRepertoireKey</key><array><string>Zyyy</string></array>
+                <key>TICapsLockLanguageSwitchCapable</key><true/>
+                <key>tsInputModeDefaultStateKey</key><true/>
+                <key>tsInputModeIsVisibleKey</key><true/>
+                <key>tsInputModePrimaryInScriptKey</key><false/>
+                <!-- Unicode composition category; ASCII capability is excluded
+                     by this mode's own repertoire above. -->
+                <key>tsInputModeScriptKey</key><string>smUnicodeScript</string>
+                <key>tsInputModeMenuIconFileKey</key><string>EnKeyBoard.icns</string>
+            </dict>
+        </dict>
+        <key>tsVisibleInputModeOrderedArrayKey</key><array><string>com.shinonome.inputmethod.EnKeyBoard.composition</string></array>
+    </dict>
+</dict></plist>
